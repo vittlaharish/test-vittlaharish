@@ -30,8 +30,8 @@ jobs:
         id: snow_change
         uses: ServiceNow/servicenow-devops-change@v6.1.0
         with:
-            devops-integration-token: ${{ secrets.SNOW_TOKEN }}
-            instance-url: ${{ secrets.SNOW_INSTANCE_URL }}
+            devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+            instance-url: ${{ secrets.SN_INSTANCE_URL }}
             tool-id: ${{ secrets.SN_TOOL_ID }}
             job-name: 'ServiceNow DevOps Change'
             change-request: 
