@@ -26,8 +26,7 @@ jobs:
   DeployDev03V:
     runs-on: ubuntu-latest
     steps:
-      - name: Create ServiceNow Change Request
-        id: snow_change
+      - name: ServiceNow DevOps Change Automation
         uses: ServiceNow/servicenow-devops-change@v6.1.0
         with:
             devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
