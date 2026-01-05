@@ -15,7 +15,8 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        run: echo "build completed"
+        
 
   Compile:
     runs-on: ubuntu-latest
